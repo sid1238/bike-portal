@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        
+
+/* Full-width input fields */
+footer {
+        text-align: center;
+        padding: 3px;
+        background-color: DarkSalmon;
+        color: white;
+      }
+
+.about_img {
+  width: 100%;
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+::selection{
+  background: #4158d0;
+  color: #fff;
+}
+.wrapper{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #4158d0;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>  
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Motorcycle Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#" >Home</a>
+                <a class="nav-link" href="2ndpage.html">Login/register</a>
+                <a class="nav-link" href="#">Contact us</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Gallery</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carouse">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.panaynews.net/wp-content/uploads/2020/06/motorcycle-backriding.jpg" class="d-block w-100" style="height: 400px;" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://miro.medium.com/max/1152/1*pnTWMYBRMXzE4nH0ReNBwQ.jpeg" class="d-block w-100" style="height: 300px;"alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://miro.medium.com/max/1152/1*pnTWMYBRMXzE4nH0ReNBwQ.jpeg" class="d-block w-100" style="height: 300px;" alt="...">
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <br>
+          <div class="container">
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-5"><h1 style="color: #005FCC;">Motorcycle portal</h1></div>
+          </div><br>
+          <div class="row">
+            <div class="col-sm-7">
+              <h2>India’s largest bike
+                renting service</h2><br>
+                <p>Bike Portal is India’s first and fastest-growing Bike taxi app with a whopping 25 Million+ app downloads. We are now running operations in more than 100 cities.</p>
+                <br>
+                <p>We have crossed 10 million happy customers and 100 million rides. Rapido is here to revolutionize intra-city travel as we bring you redefined comfort & convenience with our disruptive service model.</p>
+            </div>
+            <div class="col-sm-5 box1">
+              <div class="wrapper">
+                <div class="title">
+          Login Form</div>
+          <form action="#">
+                  <div class="field">
+                    <input type="text" required>
+                    <label>Email Address</label>
+                  </div>
+          <div class="field">
+                    <input type="password" required>
+                    <label>Password</label>
+                  </div>
+          <div class="content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="remember-me">
+                      <label for="remember-me">Remember me</label>
+                    </div>
+          <div class="pass-link">
+          <a href="#">Forgot password?</a></div>
+          </div>
+          <div class="field">
+                    <input type="submit" value="Login">
+                  </div>
+          <div class="signup-link">
+          Not a member? <a href="#">Signup now</a></div>
+          </form>
+          </div>
+            </div>
+
+     
+          </div>
+          </div>
+          <br>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-5"><h1 style="color: #005FCC;"><a href="3rdpage.html">A bike for every occasion</a></h1>></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="https://miro.medium.com/max/1152/1*pnTWMYBRMXzE4nH0ReNBwQ.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">City travelling</h5>
+                        <p class="card-text">Renting for travelling in cities like Chennai, Mumbai, Delhi, Kolkata and other Indian cities.
+
+                          Enjoy the experience of a professional, reliable and an affordable motorcycle service for all your travel needs. Our fleet of motorcycle ranges from scooters to sport bikes and adventure bikes, you name it - we have it!
+                          
+                          24/7, 365 days - We are just a call away at your service!
+                          Because we value your precious time.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="http://www.bmf.co.uk/assets/Uploads/_resampled/ResizedImageWzYwMCwzNzld/DogY2vaXkAEaXiI.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Outstation</h5>
+                        <p class="card-text">one of the leading motorcycle services in India, provides its services between various locations across various towns and villages in India at a cheap price.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://5.imimg.com/data5/TJ/ZN/AO/SELLER-5318427/motorcycle-spare-parts-500x500.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Other Services</h5>
+                        <p class="card-text">We provide the customers with spare parts of motorcycle also if the customer needs it</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+
+
+                  </div>
+              </div>
+          </div>
+         
+          <br>
+          <div class="container" id="about">
+            <div class="row mt-5 pt-5">
+              <div class="col-sm-9 col-md-11">
+                <h2 class="heading">WHY CHOOSE US</h2>
+               
+                <div class="underline underline-red line"></div>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-lg-5 pt-0 textLeft">
+                <ul>
+                  <li data-aos="zoom-in-right">
+                    <h5>Good quality motorcycle</h5>
+                    <p>We provide the best quality of motorcycles to the customers. We ensure that the motorcycles have very good features and ensure that customers feel comfortable using it. We provide the latest models available</p>
+                  </li>
+                  <li data-aos="zoom-in-right">
+                    <h5>Customer Satisfaction</h5>
+                    <p>We provide the motorcycle at a cheap and affordable price. We ensure that customers don't have any problems with the motorcycle. We make sure that the customer can choose the motorcycle for how many ever days he wants. We are always ready to help the customer.</p>
+                  </li>
+                 
+                </ul>
+              </div>
+              <div class="col-md-12 col-lg-7 pt-0 pb-5">
+                <div class="container" data-aos="zoom-in-left">
+                  <br><br>
+                  <div class="row">
+                    <div class="col-5">
+                      <img src="https://miro.medium.com/max/1152/1*pnTWMYBRMXzE4nH0ReNBwQ.jpeg" class="about_img" />
+                    </div>
+                    <div class="col-7">
+                      <img src="https://5.imimg.com/data5/TJ/ZN/AO/SELLER-5318427/motorcycle-spare-parts-500x500.jpg" class="about_img" />
+                    </div>
+                  </div><br />
+                  <div class="row">
+                    <div class="col-8">
+                      <img src="http://www.bmf.co.uk/assets/Uploads/_resampled/ResizedImageWzYwMCwzNzld/DogY2vaXkAEaXiI.jpg" class="about_img" />
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <footer>
+            <p>Motorcycle Portal<br>
+            <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
+
